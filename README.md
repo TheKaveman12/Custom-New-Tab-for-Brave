@@ -1,2 +1,14 @@
-# Custom-New-Tab-for-Brave
-A sleek new tab extension with an animated video background, rounded shortcuts for quick access to favorite sites, and a minimalist real-time clock in the corner. Perfect for enhancing your browsing experience with style and simplicity. Fully customizable and easy to set up!
+# Custom New Tab for Brave w/ Support for Animated Wallpapers
+This extension transforms your new tab into a visually stunning experience! 🌟
+
+Video Background: Enjoy a seamless animated video as your new tab background.
+Quick Shortcuts: Easily access your favorite websites with sleek, rounded shortcut icons.
+Minimal Clock: Stay on time with a clean, real-time clock in the bottom-right corner, styled with a modern font.
+Designed for those who want functionality with a touch of elegance. Perfect for spicing up your browsing experience without overloading it with clutter.
+
+📂 Files you'll love working with:
+
+newtab.html – The heart of the extension.
+script.js – Powers the real-time clock.
+CustomWallpaperGoesHere.mp4 – Your custom video background.
+💻 Ready to make your browser feel like your browser? Clone it, customize it, and enjoy!
