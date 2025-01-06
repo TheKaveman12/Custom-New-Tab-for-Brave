@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #shortcuts {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            z-index: 1;
+        }
+
+        .shortcut {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .shortcut:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .shortcut img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        #clock {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            font-size: 36px;
+            font-family: 'Roboto Mono', monospace;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <video id="background" autoplay loop muted>
+        <source src="hollow-knigth-and-hornet.1920x1080.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Shortcuts -->
+    <div id="shortcuts">
+        <a href="https://www.google.com" class="shortcut" target="_blank">
+            <img src="https://www.google.com/favicon.ico" alt="Google">
+        </a>
+        <a href="https://www.youtube.com" class="shortcut" target="_blank">
+            <img src="https://blog.youtube/static/blog_youtube/images/youtube_social_200x200.png" alt="YouTube">
+        </a>
+        <a href="https://www.github.com" class="shortcut" target="_blank">
+            <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub">
+        </a>
+        <a href="https://www.reddit.com" class="shortcut" target="_blank">
+            <img src="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" alt="Reddit">
+        </a>
+    </div>
+
+    <!-- Clock -->
+    <div id="clock">--:--</div>
+
+    <!-- Link to External JavaScript -->
+    <script src="clock.js"></script>
+</body>
+</html>

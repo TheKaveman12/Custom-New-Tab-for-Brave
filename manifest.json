@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Custom New Tab",
+  "version": "1.0",
+  "description": "A custom new tab page with video background, shortcuts, and a clock.",
+  "permissions": [],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["clock.js", "YourWallpaperGoesHere.mp4"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "script-src": ["'self'"]
+  }
+}
